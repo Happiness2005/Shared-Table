@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Donate Food - Shared Table">
+    <meta name="theme-color" content="#9D7B9B">
+    <meta name="color-scheme" content="light dark">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleSheet.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="script.js" defer></script>
+    <title>Donate Food | Shared Table</title>
+</head>
+<body>
+<nav class="main-nav">
+    <div class="nav-content container">
+        <a href="/" class="logo" aria-label="Home">
+            <i class="ph ph-plate"></i>
+            <span>Shared Table</span>
+        </a>
+    </div>
+</nav>
+
+<main class="main-content">
+    <div class="container">
+        <section id="donate-form" class="glass">
+            <h2><i class="ph ph-hand-heart"></i>Donate Food</h2>
+            <form id="donate-food-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="Enter your location" required>
+                </div>
+                <div class="form-group">
+                    <label for="food-type">Type of Food</label>
+                    <input type="text" id="food-type" placeholder="e.g., Fresh produce, canned goods, baked goods" required>
+                </div>
+                <div class="form-group">
+                    <label for="dietary-info">Dietary Information</label>
+                    <input type="text" id="dietary-info" placeholder="e.g., Vegetarian, gluten-free, contains nuts">
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date (if applicable)</label>
+                    <input type="date" id="expiry-date">
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="quantity" placeholder="e.g., 5 boxes, 10 kg" required>
+                </div>
+                <div class="form-group">
+                    <label for="pickup-options">Pickup Options</label>
+                    <select id="pickup-options" required>
+                        <option value="">Select an option</option>
+                        <option value="pickup">I can drop off the food</option>
+                        <option value="delivery">I need the food to be picked up</option>
+                    </select>
+                </div>
+                <button type="submit" class="cta-button">
+                    <i class="ph ph-paper-plane-right"></i>Submit Donation
+                </button>
+            </form>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <nav class="footer-nav">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#how-it-works">How It Works</a>
+                    <a href="index.html#join">Join Us</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
